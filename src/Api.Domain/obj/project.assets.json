@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Application\\application.csproj",
-      "projectName": "application",
-      "projectPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Application\\application.csproj",
+      "projectUniqueName": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Domain\\Domain.csproj",
+      "projectName": "Domain",
+      "projectPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Celta\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Application\\obj\\",
+      "outputPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Celta\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -52,9 +52,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
