@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LRBe+r3TIUD6dn9Qm28oXk7jpcAJDBQBKRJqgC2vEhlCsmM7GCHn9cyEd1p1fprEDaB83z72eH3SD8uEMs8p0w==",
+  "dgSpecHash": "x6l19GgMsiXs5g5C7mck653L5Wm4rx4SD8bmwgY7v6ZtPJRd80xZ9o4+vFXqGwVejA2fPb5p/9PfTfAvbacMxg==",
   "success": true,
   "projectFilePath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.CrossCutting\\CrossCutting.csproj",
   "expectedPackageFiles": [],
