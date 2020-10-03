@@ -4,11 +4,12 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Api.CrossCutting.DependencyInjection
 {
-  public class ConfigureService
-  {
-    public static void ConfigureDependencysService(IServiceCollection serviceCollection)
+    public class ConfigureService
     {
-      serviceCollection.AddTransient<IUserService, UserService>();
+        public static void ConfigureDependencysService(IServiceCollection serviceCollection)
+        {
+            serviceCollection.AddTransient<IUserService, UserService>();
+            serviceCollection.AddTransient<ILoginService, LoginService>();
+        }
     }
-  }
 }

@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "XiBlCWSFwzTx0k+mCJkWrpdR5bwYRznka+6tovMnEXkpMEJ0Mcv1vNlqrz31DgAv42ZEdYnhRM4udyKtaTSVdA==",
+  "dgSpecHash": "UzkGNicVSPw1zEz4ZjRz817TZWFa+gal32XGGyO8CG09SdMkleVwgAZvXl3jaQpY+9pMrdabfByufGU9MclZXQ==",
   "success": true,
   "projectFilePath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Pablo\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.7.2-preview-10803222715\\microsoft.identitymodel.jsonwebtokens.6.7.2-preview-10803222715.nupkg.sha512",
+    "C:\\Users\\Pablo\\.nuget\\packages\\microsoft.identitymodel.logging\\6.7.2-preview-10803222715\\microsoft.identitymodel.logging.6.7.2-preview-10803222715.nupkg.sha512",
+    "C:\\Users\\Pablo\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.2-preview-10803222715\\microsoft.identitymodel.tokens.6.7.2-preview-10803222715.nupkg.sha512",
+    "C:\\Users\\Pablo\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.2-preview-10803222715\\system.identitymodel.tokens.jwt.6.7.2-preview-10803222715.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

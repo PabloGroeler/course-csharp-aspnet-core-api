@@ -55,3 +55,11 @@ C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1
 C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Git\course-csharp-aspnet-core-api\src\Api.Application\obj\Debug\netcoreapp3.1\application.MvcApplicationPartsAssemblyInfo.cs
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
