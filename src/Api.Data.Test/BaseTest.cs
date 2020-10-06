@@ -23,7 +23,7 @@ namespace Api.Data.Test
         {
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddDbContext<MyContext>(o =>
-                o.UseNpgsql($"Persist Security Info=True;Server=127.0.0.1;Database={dataBaseName};User=postgres;Password=postgres"),
+                o.UseNpgsql($"Server=127.0.0.1; port=5432; user id = postgres; password = postgres; database={dataBaseName}; pooling = true"),
                     ServiceLifetime.Transient
             );
 
