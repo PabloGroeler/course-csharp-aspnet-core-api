@@ -16,7 +16,7 @@ namespace Api.Data.Test
     }
 
     public class DbTeste: IDisposable {
-        private string dataBaseName = $"dbApiTest_{Guid.NewGuid().ToString().Replace("-", string.Empty)}";
+        private string dataBaseName = $"aspnetcore2_{Guid.NewGuid().ToString().Replace("-", string.Empty)}";
         public ServiceProvider serviceProvider {get; private set;}
 
         public DbTeste()
