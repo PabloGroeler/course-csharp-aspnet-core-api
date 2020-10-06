@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Data.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20200923230402_UserMigration")]
+    [Migration("20201006020302_UserMigration")]
     partial class UserMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,6 +48,16 @@ namespace Data.Migrations
                         .IsUnique();
 
                     b.ToTable("User");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("cf6f5af2-7755-41ad-8298-500c34f7c7dd"),
+                            CreateAt = new DateTime(2020, 10, 5, 22, 3, 1, 738, DateTimeKind.Local).AddTicks(1800),
+                            Email = "Pablo@celtasistemas.com.br",
+                            Name = "Administrador",
+                            UpdateAt = new DateTime(2020, 10, 5, 22, 3, 1, 739, DateTimeKind.Local).AddTicks(2522)
+                        });
                 });
 #pragma warning restore 612, 618
         }

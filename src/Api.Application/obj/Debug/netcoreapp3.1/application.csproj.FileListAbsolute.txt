@@ -63,3 +63,17 @@ C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1
 C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll

@@ -1,3 +1,4 @@
+using System;
 using Api.Data.Context;
 using Api.Data.Repository;
 using Api.Data.Implementations;
@@ -15,10 +16,20 @@ namespace Api.CrossCutting.DependencyInjection
             serviceCollection.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             serviceCollection.AddScoped<IUserRepository, UserImplementation>();
 
+            if (Environment.GetEnvironmentVariable("DATABASE").ToLower() == "SQLSERVER".ToLower())
+            {
+                serviceCollection.AddDbContext<MyContext>(
+                  options => options.UseSqlServer(Environment.GetEnvironmentVariable("DB_CONNECTION"))
+                );
+            }
+            else
+            {
+                serviceCollection.AddDbContext<MyContext>(
+                      options => options.UseNpgsql(Environment.GetEnvironmentVariable("DB_CONNECTION"))
+                  );
+            }
 
-            serviceCollection.AddDbContext<MyContext>(
-                  options => options.UseNpgsql("Server=127.0.0.1; port=5432; user id = postgres; password = postgres; database=aspnetcore; pooling = true")
-              );
+
         }
 
     }
