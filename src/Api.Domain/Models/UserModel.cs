@@ -26,7 +26,7 @@ namespace Api.Domain.Models
         }
 
         private DateTime _createAt;
-        public DateTime MyProperty
+        public DateTime CreateAt
         {
             get { return _createAt; }
             set { 
