@@ -120,7 +120,7 @@ namespace Api.Application.Controllers
         {
             if (!ModelState.IsValid)
             {
-                BadRequest(ModelState);
+                return BadRequest(ModelState);
             }
 
             try
