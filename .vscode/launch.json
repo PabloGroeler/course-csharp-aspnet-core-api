@@ -23,7 +23,10 @@
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DB_CONNECTION": "Server=127.0.0.1; port=5432; user id = postgres; password = postgres; database=aspnetcore2; pooling = true",
         "DATABASE": "POSTGRES",
-        "MIGRATION": "APLICAR"
+        "MIGRATION": "APLICAR",
+        "Audience": "ExemploAudience",
+        "Issuer": "ExemploIssuer",
+        "Seconds": "120"
       },
       "sourceFileMap": {
         "/Views": "${workspaceFolder}/Views"

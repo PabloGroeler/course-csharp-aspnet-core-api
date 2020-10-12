@@ -11,23 +11,23 @@ namespace Api.Application.Test.Usuario.RequestDelete
 {
     public class GetBadRequest
     {
-        private UsersController _controller; 
+        private UsersController _controller;
 
         [Fact(DisplayName = "GetBadRequest")]
         public async Task Get()
-        { 
+        {
             var serviceMock = new Mock<IUserService>();
             var nome = Faker.Name.FullName();
             var email = Faker.Internet.Email();
 
             serviceMock.Setup(m => m.Get(It.IsAny<Guid>())).ReturnsAsync(
-                 new UserDto 
-                {
-                    Id = Guid.NewGuid(),
-                    Name = nome,
-                    Email = email,
-                    CreateAt = DateTime.UtcNow
-                }
+                 new UserDto
+                 {
+                     Id = Guid.NewGuid(),
+                     Name = nome,
+                     Email = email,
+                     CreateAt = DateTime.UtcNow
+                 }
             );
 
             _controller = new UsersController(serviceMock.Object);

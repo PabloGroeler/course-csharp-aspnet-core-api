@@ -26,16 +26,30 @@ namespace application
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment environment)
         {
             this.Configuration = configuration;
-
+            _environment = environment;
         }
         public IConfiguration Configuration { get; }
+        public IWebHostEnvironment _environment { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            if (_environment.IsEnvironment("Testing"))
+            {
+                Environment.SetEnvironmentVariable("DB_CONNECTION",
+                                                   "Server=127.0.0.1; port=5432; user id = postgres; password = postgres; database=aspnetcore_integration; pooling = true");
+                Environment.SetEnvironmentVariable("DATABASE", "POSTGRES");
+                Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
+                Environment.SetEnvironmentVariable("Audience", "ExemploAudience");
+                Environment.SetEnvironmentVariable("Issuer", "ExemploIssuer");
+                Environment.SetEnvironmentVariable("Seconds", "120");
+            }
+
+            services.AddControllers();
+
             ConfigureService.ConfigureDependencysService(services);
             ConfigureRepository.ConfigureDependencyRepository(services);
 
@@ -80,7 +94,6 @@ namespace application
                 .RequireAuthenticatedUser().Build());
             });
 
-            services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo

@@ -9,19 +9,19 @@ using Xunit;
 
 namespace Api.Application.Test.Usuario.RequestGet
 {
-    public class Get
+    public class GetBadRequest
     {
-         private UsersController _controller;
+        private UsersController _controller;
 
         [Fact(DisplayName = "Get")]
-        public async Task Delete()
-        { 
+        public async Task Get()
+        {
             var serviceMock = new Mock<IUserService>();
             var nome = Faker.Name.FullName();
             var email = Faker.Internet.Email();
 
             serviceMock.Setup(m => m.Get(It.IsAny<Guid>())).ReturnsAsync(
-                new UserDto 
+                new UserDto
                 {
                     Id = Guid.NewGuid(),
                     Name = nome,
