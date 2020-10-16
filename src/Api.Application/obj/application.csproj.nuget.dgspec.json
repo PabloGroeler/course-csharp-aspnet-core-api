@@ -10,16 +10,21 @@
         "projectUniqueName": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Application\\application.csproj",
         "projectName": "application",
         "projectPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Application\\application.csproj",
-        "packagesPath": "C:\\Users\\Celta\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
         "outputPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Celta\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -87,16 +92,21 @@
         "projectUniqueName": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.CrossCutting\\CrossCutting.csproj",
         "projectName": "CrossCutting",
         "projectPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.CrossCutting\\CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\Celta\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
         "outputPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Celta\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -147,7 +157,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -157,16 +167,21 @@
         "projectUniqueName": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Data\\Data.csproj",
         "projectName": "Data",
         "projectPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\Celta\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
         "outputPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Celta\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -221,7 +236,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -231,16 +246,21 @@
         "projectUniqueName": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Domain\\Domain.csproj",
         "projectName": "Domain",
         "projectPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Celta\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
         "outputPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Celta\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -277,7 +297,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -287,16 +307,21 @@
         "projectUniqueName": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Service\\Service.csproj",
         "projectName": "Service",
         "projectPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\Celta\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
         "outputPath": "C:\\Git\\course-csharp-aspnet-core-api\\src\\Api.Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Celta\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -340,7 +365,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

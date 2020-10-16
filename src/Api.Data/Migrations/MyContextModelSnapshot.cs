@@ -19,6 +19,123 @@ namespace Data.Migrations
                 .HasAnnotation("ProductVersion", "3.1.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
+            modelBuilder.Entity("Api.Domain.Entities.CepEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Cep")
+                        .IsRequired()
+                        .HasColumnType("character varying(10)")
+                        .HasMaxLength(10);
+
+                    b.Property<DateTime?>("CreateAt")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Logradouro")
+                        .IsRequired()
+                        .HasColumnType("character varying(60)")
+                        .HasMaxLength(60);
+
+                    b.Property<Guid>("MunicipioId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Numero")
+                        .HasColumnType("character varying(10)")
+                        .HasMaxLength(10);
+
+                    b.Property<DateTime?>("UpdateAt")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Cep");
+
+                    b.HasIndex("MunicipioId");
+
+                    b.ToTable("Cep");
+                });
+
+            modelBuilder.Entity("Api.Domain.Entities.MunicipioEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("CodIbge")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime?>("CreateAt")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("character varying(100)")
+                        .HasMaxLength(100);
+
+                    b.Property<Guid>("UfId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime?>("UpdateAt")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CodIbge")
+                        .IsUnique();
+
+                    b.HasIndex("UfId");
+
+                    b.ToTable("Municipio");
+                });
+
+            modelBuilder.Entity("Api.Domain.Entities.UfEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime?>("CreateAt")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("character varying(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Sigla")
+                        .IsRequired()
+                        .HasColumnType("character varying(2)")
+                        .HasMaxLength(2);
+
+                    b.Property<DateTime?>("UpdateAt")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Sigla")
+                        .IsUnique();
+
+                    b.ToTable("Uf");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("22ffbd18-cdb9-45cc-97b0-51e97700bf71"),
+                            CreateAt = new DateTime(2020, 10, 16, 1, 53, 39, 734, DateTimeKind.Utc).AddTicks(6759),
+                            Nome = "Mato Grosso",
+                            Sigla = "MT"
+                        },
+                        new
+                        {
+                            Id = new Guid("7cc33300-586e-4be8-9a4d-bd9f01ee9ad8"),
+                            CreateAt = new DateTime(2020, 10, 16, 1, 53, 39, 734, DateTimeKind.Utc).AddTicks(6886),
+                            Nome = "Paraná",
+                            Sigla = "PR"
+                        });
+                });
+
             modelBuilder.Entity("Api.Domain.Entities.UserEntity", b =>
                 {
                     b.Property<Guid>("Id")
@@ -50,12 +167,30 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("cf6f5af2-7755-41ad-8298-500c34f7c7dd"),
-                            CreateAt = new DateTime(2020, 10, 5, 22, 3, 1, 738, DateTimeKind.Local).AddTicks(1800),
+                            Id = new Guid("25ac651d-6a59-41f3-9e87-fe4c3bc5528e"),
+                            CreateAt = new DateTime(2020, 10, 15, 21, 53, 39, 729, DateTimeKind.Local).AddTicks(646),
                             Email = "Pablo@celtasistemas.com.br",
                             Name = "Administrador",
-                            UpdateAt = new DateTime(2020, 10, 5, 22, 3, 1, 739, DateTimeKind.Local).AddTicks(2522)
+                            UpdateAt = new DateTime(2020, 10, 15, 21, 53, 39, 731, DateTimeKind.Local).AddTicks(2962)
                         });
+                });
+
+            modelBuilder.Entity("Api.Domain.Entities.CepEntity", b =>
+                {
+                    b.HasOne("Api.Domain.Entities.MunicipioEntity", "Municipio")
+                        .WithMany("Ceps")
+                        .HasForeignKey("MunicipioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Api.Domain.Entities.MunicipioEntity", b =>
+                {
+                    b.HasOne("Api.Domain.Entities.UfEntity", "Uf")
+                        .WithMany("Municipios")
+                        .HasForeignKey("UfId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
