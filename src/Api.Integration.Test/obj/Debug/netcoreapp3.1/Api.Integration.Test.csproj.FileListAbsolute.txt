@@ -160,3 +160,4 @@ C:\Git\course-csharp-aspnet-core-api\src\Api.Integration.Test\obj\Debug\netcorea
 C:\Git\course-csharp-aspnet-core-api\src\Api.Integration.Test\obj\Debug\netcoreapp3.1\Api.Integration.Test.dll
 C:\Git\course-csharp-aspnet-core-api\src\Api.Integration.Test\obj\Debug\netcoreapp3.1\Api.Integration.Test.pdb
 C:\Git\course-csharp-aspnet-core-api\src\Api.Integration.Test\obj\Debug\netcoreapp3.1\Api.Integration.Test.genruntimeconfig.cache
+C:\Git\course-csharp-aspnet-core-api\src\Api.Integration.Test\bin\Debug\netcoreapp3.1\xunit.runner.json

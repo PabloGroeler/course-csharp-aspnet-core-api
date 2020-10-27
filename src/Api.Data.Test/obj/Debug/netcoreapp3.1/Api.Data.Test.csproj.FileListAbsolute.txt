@@ -158,3 +158,4 @@ C:\Git\course-csharp-aspnet-core-api\src\Api.Data.Test\bin\Debug\netcoreapp3.1\a
 C:\Git\course-csharp-aspnet-core-api\src\Api.Data.Test\bin\Debug\netcoreapp3.1\application.pdb
 C:\Git\course-csharp-aspnet-core-api\src\Api.Data.Test\bin\Debug\netcoreapp3.1\Faker.NETCore.dll
 C:\Git\course-csharp-aspnet-core-api\src\Api.Data.Test\bin\Debug\netcoreapp3.1\de-DE\Faker.NETCore.resources.dll
+C:\Git\course-csharp-aspnet-core-api\src\Api.Data.Test\bin\Debug\netcoreapp3.1\xunit.runner.json

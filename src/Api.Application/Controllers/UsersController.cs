@@ -51,8 +51,9 @@ namespace Api.Application.Controllers
 
             try
             {
-                var result =  await _service.Get(id);
-                if (result == null) {
+                var result = await _service.Get(id);
+                if (result == null)
+                {
                     return NotFound();
                 }
 
@@ -64,7 +65,7 @@ namespace Api.Application.Controllers
             }
         }
 
-        [Authorize("Bearer")]
+        [AllowAnonymous]
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] UserDtoCreate user)
         {
