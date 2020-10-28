@@ -23,6 +23,13 @@ namespace Api.Data.Seeds
                     Sigla = "PR",
                     Nome = "Paraná",
                     CreateAt = DateTime.UtcNow
+                },
+                new UfEntity()
+                {
+                    Id = new System.Guid("e7e416de-477c-4fa3-a541-b5af5f35ccf6"),
+                    Sigla = "SP",
+                    Nome = "São Paulo",
+                    CreateAt = DateTime.UtcNow
                 }
             );
         }

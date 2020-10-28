@@ -43,7 +43,7 @@ namespace Api.Data.Test
 
                 var _todosRegistros = await _repositorio.SelectAsync();
                 Assert.NotNull(_todosRegistros);
-                Assert.True(_todosRegistros.Count() == 2); /// FIX 27 estados
+                Assert.True(_todosRegistros.Count() == 3); /// FIX 27 estados
             }
         }
     }
